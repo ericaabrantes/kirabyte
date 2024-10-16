@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Erica+One&family=Hanuman:wght@100;300;400;700;900&family=Kaisei+Tokumin&display=swap');
+
+
+:root{
+    --cor-primaria:#C63072;
+    --cor-secundaria:#64AADD;
+    --cor-terciaria:#DE95A5;
+    --cor-texto:#FFFFFF;
+    --fonte-titulo:"Erica One", sans-serif;
+    --fonte-subtitulo:"Hanuman", serif;
+    --fonte-texto:"Kaisei Tokumin", serif;
+}
+
+body{
+    font-family: var(--fonte-texto);
+    color: var(--cor-texto);
+}
+
+.cabecalho{
+    background-color: var(--cor-primaria);
+}
+.menu{
+    display: flex;
+}
+.menu-logo{
+    max-height: 214px ;
+    width: auto;
+    height: auto;
+}
+.menu-lista{
+    display: flex;
+}
+.menu-item{
+   align-items:flex-end ;
+   justify-content: space-between;
+   padding: 1rem;
+}
+
+.projetos{
+    background-color: var(--cor-secundaria);
+}
+
+.servicos{
+    background-color: var(--cor-terciaria);
+}
+
+.sobre{
+    background-color: var(--cor-secundaria);
+}
+
+.setup{
+    background-color: var(--cor-primaria);
+}
+.contato{
+    background-color: var(--cor-secundaria);
+}
+.rodape{
+    background-color: var(--cor-primaria);
+}
