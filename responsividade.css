@@ -1,0 +1,65 @@
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .menu-lista {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .menu-item {
+        padding: 10px 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .conteudo-servicos {
+        flex-direction: column;
+    }
+
+    .servicos h2 {
+        font-size: 2rem;
+    }
+
+    .texto-servicos ul {
+        font-size: 1rem;
+    }
+
+    .imagem-servico {
+        max-width: 300px;
+        margin-top: 20px;
+    }
+
+
+    @media (max-width: 768px) {
+        .banner-conteudo {
+            flex-direction: column;
+            text-align: center;
+            gap: 20px;
+        }
+
+        .texto {
+            text-align: center;
+        }
+
+        .logo {
+            margin: 0 auto 10px auto;
+        }
+
+        .foto-erica {
+            width: 80%;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .borboleta-top,
+        .borboleta-bottom {
+            width: 100px;
+            /* Diminuindo o tamanho das borboletas no mobile */
+        }
+    }

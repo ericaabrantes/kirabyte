@@ -7,6 +7,7 @@
     <title>Kirabyte</title>
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./responsividade.css">
 </head>
 
 <body>
@@ -22,12 +23,19 @@
         </nav>
 
         <section class="banner-principal">
-            <img src="./assets/kirabytelogo branca.png" alt="Logo da Kirabyte">
-            <img src="./assets/borboleta.png" alt="Borboletas">
-            <p>Desenvolvedora Front - end focada em criar sites que falam diretamente com seu público.</p>
-            <p>Te ajudo a se conectar com sua audiencia, e alcancar seus objetivos</p>
-            <img src="./assets/érica.png" alt="Érica">
-            <img src="./assets/borboleta.png" alt="Borboletas">
+            <img src="./assets/kirabytelogo branca.png" alt="Logo da Kirabyte" class="logo">
+
+            <div class="banner-conteudo">
+                <div class="texto">
+                    <p>Desenvolvedora Front - end focada em criar sites que falam diretamente com seu público.</p>
+                    <p>Te ajudo a se conectar com sua <strong>audiência</strong>, e alcançar seus
+                        <strong>objetivos</strong></p>
+                </div>
+                <img src="./assets/érica.png" alt="Érica" class="foto-erica">
+            </div>
+
+            <img src="./assets/borboleta.png" alt="Borboletas" class="borboleta-top">
+            <img src="./assets/borboleta.png" alt="Borboletas" class="borboleta-bottom">
         </section>
     </header>
 
@@ -43,68 +51,87 @@
     </section>
 
     <section class="servicos">
-        <h2>O que a Kirabyte pode fazer por
-            voce</h2>
+        <h2>O que a Kirabyte pode fazer por você</h2>
 
-        <div>
-            <ul>
-                <li>Sites rápidos e responsivos para melhor experiência.</li>
-                <li>Design personalizado que reflete sua marca.</li>
-                <li>Criação de páginas que geram identificação e conexão emocional.</li>
-                <li>Aumento da visibilidade online.</li>
-            </ul>
+        <div class="conteudo-servicos">
+            <div class="texto-servicos">
+                <ul>
+                    <li>Sites rápidos e responsivos para melhor experiência.</li>
+                    <li>Design personalizado que reflete sua marca.</li>
+                    <li>Criação de páginas que geram identificação e conexão emocional.</li>
+                    <li>Aumento da visibilidade online.</li>
+                </ul>
+
+            </div>
+
+            <img src="./assets/notebook.png" alt="Notebook com flores" class="imagem-servico">
         </div>
-
-        <div>
-            <p>Vamos construir sua presença online juntos?</p>
+        <div class="chamada">
+            <a href="https://api.whatsapp.com/send?phone=SEU_NUMERO_DE_TELEFONE" class="botao-whatsapp">
+                Vamos construir sua presença online juntos?
+            </a>
         </div>
-
-        <img src="./assets/notebook.png" alt="Notebook com flores">
     </section>
 
     <section class="sobre">
         <h2>Quem sou eu</h2>
         <h3>De dev para empreendedor: entendendo suas dores e trazendo soluções.</h3>
-        <p>Oi! Eu sou a Érica, desenvolvedora apaixonadoa por criar soluções digitais que realmente fazem a diferença.
-            Sei que a tecnologia pode parecer um obstáculo, mas meu trabalho é tornar todo o processo simples e sem
-            estresse para você. Quando não estou codando, estou estudando as melhores práticas para garantir que cada
-            site que construo seja rápido, intuitivo e eficiente.
+        <div class="sobre__conteudo">
+            <div class="sobre__texto">
+                <p>Oi! Eu sou a Érica, desenvolvedora apaixonada por criar soluções digitais que realmente fazem a
+                    diferença.
+                    Sei que a tecnologia pode parecer um obstáculo, mas meu trabalho é tornar todo o processo simples e
+                    sem
+                    estresse para você. Quando não estou codando, estou estudando as melhores práticas para garantir que
+                    cada
+                    site que construo seja rápido, intuitivo e eficiente.</p>
 
-            Eu entendo as necessidades do seu negócio porque, assim como você, também sou empreendedor. Acredito que uma
-            presença online forte pode ser a chave para atrair os clientes certos e crescer de forma sustentável.</p>
+                <p>Eu entendo as necessidades do seu negócio porque, assim como você, também sou empreendedora. Acredito
+                    que uma
+                    presença online forte pode ser a chave para atrair os clientes certos e crescer de forma
+                    sustentável.</p>
+            </div>
 
-        <img src="./assets/érica 2.png" alt="Érica">
+            <img src="./assets/érica 2.png" alt="Érica">
+        </div>
 
-        <div>
-            <p>Quer saber mais? Vamos conversar!</p>
+        <div class="sobre__cta">
+            <a href="https://wa.me/seunumerodetelefone" class="botao-whatsapp">Quer saber mais? Vamos conversar!</a>
         </div>
     </section>
 
     <section class="setup">
         <h2>Onde a mágica acontece</h2>
         <h3>Aqui é onde eu transformo as ideias em realidade</h3>
-        <img src="./assets/setup.png" alt="Setup">
-        <p>Criar sites não é apenas uma tarefa técnica, é um processo criativo. Meu ambiente de trabalho reflete essa
-            paixão por inovação e aprendizado constante. Confira um pouco dos bastidores e veja de onde vêm as ideias
-            que podem transformar o seu site.</p>
-
-        <div>
-            <p>Quer uma amostra da mágica? Vamos começar o seu projeto!</p>
+        <div class="setup__conteudo">
+            <img src="./assets/setup.png" alt="Setup">
+            <div class="setup__texto">
+                <p>Criar sites não é apenas uma tarefa técnica, é um processo criativo. Meu ambiente de trabalho reflete
+                    essa
+                    paixão por inovação e aprendizado constante. Confira um pouco dos bastidores e veja de onde vêm as
+                    ideias
+                    que podem transformar o seu site.</p>
+                <div>
+                    <a href="https://wa.me/seunumerodetelefone" class="cta-whatsapp">Quer uma amostra da mágica?<br>
+                        Vamos começar o seu projeto!</a>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="contato">
         <h2>Vamos trabalhar juntos?</h2>
         <h3>Estou aqui para ajudar a levar sua presença online para o próximo nível.</h3>
-
-        <p>Nome</p>
-        <p>Whats App</p>
-        <p>Email</p>
-        <p>Mnesagem</p>
+        <div class="contato__formulario">
+            <p class="contato__campos">Nome:</p>
+            <p class="contato__campos">Whats App:</p>
+            <p class="contato__campos">E-mail:</p>
+            <p class="contato__campos">Mensagem:</p>
+        </div>
     </section>
 
     <footer class="rodape">
-        <p>Todos os direitos reservados
+        <p>Todos os direitos reservados<br>
             Desenvolvido por Érica Abrantes Ignatios</p>
     </footer>
 
