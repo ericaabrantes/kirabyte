@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./responsividade.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("9a1P3vmkvCrIY_AG4"); // Substitua pela sua Public Key correta
+        })();
+    </script>
 </head>
 
 <body>
@@ -38,16 +44,28 @@
             <img src="./assets/borboleta.png" alt="Borboletas" class="borboleta-bottom">
         </section>
     </header>
-
     <section class="projetos">
         <h2>Projetos</h2>
-        <img src="" alt="">
-        <h6 class="projetos__titulo">
-            Café Miau Studio
-        </h6>
-        <p class="projetos__texto">Projeto desenvolvido para um studio de arte, ilustraçoes e designer.
-            Nesse projeto foi utilizado HTML e CSS</p>
-
+        <div class="carrossel">
+            <div class="slide ativo">
+                <img src="./assets/cafemiaustudio.png" alt="Preview do Projeto Café Miau Studio">
+                <h6 class="projetos__titulo">Café Miau Studio</h6>
+                <p class="projetos__texto">Projeto desenvolvido para um studio de arte, ilustrações e design. Nesse projeto foi utilizado HTML e CSS.</p>
+                <a href="https://cafe-miau-studio.vercel.app" target="_blank" class="btn-projeto">Conhecer Projeto</a>
+            </div>
+    
+            <div class="slide">
+                <img src="./assets/coisadecasalgamer.png" alt="Preview do Projeto Coisa de Casal Gamer">
+                <h6 class="projetos__titulo">Coisa de Casal Gamer</h6>
+                <p class="projetos__texto">Site desenvolvido para streamers, com integração dos youtube, de forma que os vídeos postados se atualizem no site de forma automática</p>
+                <a href="https://coisadecasalgamer.com.br/" target="_blank" class="btn-projeto">Conhecer Projeto</a>
+            </div>
+    
+            <!-- Adicione mais slides conforme necessário -->
+    
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
     </section>
 
     <section class="servicos">
@@ -122,19 +140,28 @@
     <section class="contato">
         <h2>Vamos trabalhar juntos?</h2>
         <h3>Estou aqui para ajudar a levar sua presença online para o próximo nível.</h3>
-        <div class="contato__formulario">
-            <p class="contato__campos">Nome:</p>
-            <p class="contato__campos">Whats App:</p>
-            <p class="contato__campos">E-mail:</p>
-            <p class="contato__campos">Mensagem:</p>
-        </div>
+        <form class="contato__formulario" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" class="contato__campos" placeholder="Digite seu nome">
+    
+            <label for="whatsapp">WhatsApp:</label>
+            <input type="text" id="whatsapp" name="whatsapp" class="contato__campos" placeholder="Digite seu WhatsApp">
+    
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" class="contato__campos" placeholder="Digite seu e-mail">
+    
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" class="contato__campos" placeholder="Escreva sua mensagem"></textarea>
+
+            <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
     </section>
 
     <footer class="rodape">
         <p>Todos os direitos reservados<br>
             Desenvolvido por Érica Abrantes Ignatios</p>
     </footer>
-
+    <script src="./scripts.js"></script>
 </body>
 
 </html>

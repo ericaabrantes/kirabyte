@@ -20,11 +20,13 @@ h2{
     font-family: var(--fonte-titulo);
     font-size: 3rem;
     text-align: center;
+    margin: 16px;
 }
 
 h3{
     font-family: var(--fonte-subtitulo);
     text-align: center;
+    margin: 16px;
 }
 
 .cabecalho {
@@ -135,9 +137,89 @@ h3{
     width: 150px; /* Aumentando o tamanho da borboleta */
 }
 
-.projetos{
+.projetos {
     background-color: var(--cor-secundaria);
+    padding: 2rem;
+    text-align: center;
 }
+
+.carrossel {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    text-align: center;
+}
+
+.slide.ativo {
+    display: block;
+}
+
+.carrossel img {
+    width: 800px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.projetos__titulo {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.projetos__texto {
+
+    color: var(--cor-texto);
+    margin-top: 0.5rem;
+}
+
+/* Botão de conhecer projeto */
+.btn-projeto {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background-color: #c73f6d; /* Cor de fundo do botão */
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-projeto:hover {
+    background-color: #C2185B; /* Cor do botão ao passar o mouse */
+}
+
+/* Ajuste de alinhamento e espaçamento */
+.slide .btn-projeto {
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+
 
 .servicos {
     background-color: var(--cor-terciaria);
@@ -325,24 +407,69 @@ h3{
     flex-direction: column;
     flex-wrap: wrap;
 } */
-.contato{
+.contato {
     background-color: var(--cor-secundaria);
+    padding: 40px 20px;
+    text-align: center;
 }
-.contato__formulario{
+
+.contato__formulario {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     gap: 16px;
+    margin-top: 20px;
 }
 
-.contato__campos{
-    background-color: #000000;
-    opacity: 0.2;
-    border: 1px, solid, #000000;
+.contato__campos {
+    width: 100%;
+    max-width: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #64AADD;;
+    border: 1px solid #000000; /* Corrigido o estilo de borda */
     border-radius: 35px;
-    color: var(--cor-texto);
     padding: 16px;
+    font-size: 1rem;
+    color: var(--cor-texto);
+    outline: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+.contato__campos::placeholder {
+    color: #ffffff;
+ /* Placeholder com cor mais suave */
+}
+
+textarea.contato__campos {
+    height: 120px; /* Para o campo de mensagem ser maior */
+    resize: none; /* Desabilita o redimensionamento do textarea */
+}
+
+/* Estilo do botão "Enviar" */
+.btn-enviar {
+    background-color: #D81B60; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto */
+    border: none;
+    border-radius: 35px;
+    padding: 16px 32px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-enviar:hover {
+    background-color: #C2185B; /* Cor ao passar o mouse */
+}
+
+/* Estilo para o texto do título */
+h2 {
+    font-size: 2rem;
+    color: var(--cor-texto);
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: var(--cor-texto);
 }
 .rodape{
     background-color: var(--cor-primaria);
