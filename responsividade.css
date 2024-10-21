@@ -1,18 +1,6 @@
 @media (max-width: 768px) {
-    .menu {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
-    }
-
-    .menu-lista {
-        flex-direction: column;
-        width: 100%;
-        gap: 10px;
-    }
-
-    .menu-item {
-        padding: 10px 0;
+    .menu{
+        display: none;
     }
 }
 
@@ -62,6 +50,7 @@
             width: 100px;
             /* Diminuindo o tamanho das borboletas no mobile */
         }
+
     }
 }
 
@@ -94,3 +83,4 @@
         padding: 8px;
     }
 }
+
