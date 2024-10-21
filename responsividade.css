@@ -2,6 +2,10 @@
     .menu{
         display: none;
     }
+
+    body{
+        font-size: 1rem;
+    }
 }
 
 
@@ -84,3 +88,90 @@
     }
 }
 
+
+
+/* Layout responsivo para telas menores que 517px */
+@media (max-width: 517px) {
+    /* Centraliza os títulos e permite quebra de linha */
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        text-align: center;
+        word-wrap: break-word; /* Permite que o texto quebre em várias linhas */
+    }
+
+    .sobre__conteudo {
+        display: block; /* Alinha o conteúdo verticalmente */
+    }
+
+    .sobre__texto {
+        width: 100%;
+        margin-right: 2%;
+
+    }
+
+    .sobre__conteudo img {
+        width: 100%; /* Faz a imagem ocupar toda a largura disponível */
+        margin-top: 20px;
+    }
+
+    .sobre__cta {
+        margin-top: 30px;
+
+    }
+
+    .botao-whatsapp{
+        font-size: 1rem;
+    }
+    .sobre img{
+        width: 70%;;
+    }
+}
+
+/* Estilo para telas menores que 517px */
+@media (max-width: 517px) {
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        text-align: center;
+        word-wrap: break-word; /* Permite que o texto quebre em várias linhas */
+    }
+
+    .setup__conteudo {
+        display: block; /* Alinha os itens verticalmente */
+        text-align: center;
+    }
+
+    .setup__conteudo img {
+        width: 70%; /* Faz a imagem ocupar toda a largura */
+        margin-bottom: 20px; /* Espaço entre imagem e texto */
+    }
+
+    .setup__texto {
+        width: 100%; /* Texto ocupa toda a largura */
+        margin: 0 auto;
+    }
+
+    .setup__texto p {
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+
+    .cta-whatsapp {
+        width: 80%; /* Botão ocupa toda a largura */
+        padding: 1rem; /* Reduz o padding para melhor ajuste em telas pequenas */
+        margin-top: 20px;
+    }
+}
