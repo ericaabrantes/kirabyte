@@ -436,12 +436,14 @@ h3{
 
 .contato__campos::placeholder {
     color: #ffffff;
+    font-family: var(--fonte-texto);
  /* Placeholder com cor mais suave */
 }
 
 textarea.contato__campos {
     height: 120px; /* Para o campo de mensagem ser maior */
     resize: none; /* Desabilita o redimensionamento do textarea */
+    font-family: var(--fonte-texto);
 }
 
 /* Estilo do botão "Enviar" */

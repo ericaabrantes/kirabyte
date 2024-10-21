@@ -63,4 +63,34 @@
             /* Diminuindo o tamanho das borboletas no mobile */
         }
     }
-   
+}
+
+
+/* Responsividade para telas menores */
+@media (max-width: 735px) {
+    /* Ajusta o carrossel para ocupar 100% da largura em telas pequenas */
+    .carrossel {
+        max-width: 100%;
+        padding: 0 10px; /* Pequeno padding lateral para não encostar nas bordas */
+    }
+
+    /* Faz as imagens ocuparem 100% do container no mobile */
+    .carrossel img {
+        width: 100%; /* Ajusta a largura para 100% do container */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    /* Ajusta o tamanho dos títulos e textos no mobile */
+    .projetos__titulo {
+        font-size: 1.2rem; /* Menor tamanho para telas menores */
+    }
+
+    .projetos__texto {
+        font-size: 0.9rem; /* Texto menor para telas pequenas */
+    }
+
+    /* Ajusta os botões de navegação (prev e next) para ficarem menores no mobile */
+    .prev, .next {
+        padding: 8px;
+    }
+}
