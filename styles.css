@@ -48,9 +48,10 @@ h3{
 }
 
 .menu-logo {
-    max-height: 100px; /* A logo vai se ajustar ao tamanho máximo da altura do menu */
+    max-height: 50px; /* A logo vai se ajustar ao tamanho máximo da altura do menu */
     height: auto;
     width: auto;
+    padding: 15px;
 }
 
 .menu-lista {
@@ -69,8 +70,14 @@ h3{
     cursor: pointer;
 }
 
-.menu-item:hover {
+.menu_link:hover {
     color: var(--cor-secundaria); /* Efeito de hover */
+    font-size: 1.5rem;
+}
+
+.menu_link{
+    text-decoration:none;
+    color: var(--cor-texto);
 }
 
 .banner-principal {
@@ -255,7 +262,7 @@ h3{
     list-style-position: inside;
     font-size: 1.25rem;
     color: var(--cor-texto);
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     padding: 0;
 }
 
@@ -480,4 +487,26 @@ h3 {
     padding: 16px;
     font-size: 0.8rem;
 }
+
+.botao-whatsapp-1 {
+  
+    font-size: 1rem;
+    word-wrap: break-word; /* Permite que o texto dentro do botão quebre linhas */
+    white-space: normal; /* Garante que o texto dentro do botão quebre linhas conforme necessário */
+    width: 100%; /* Faz com que o botão ocupe toda a largura disponível */
+    padding: 10px 20px; /* Ajusta o espaçamento interno */
+    text-align: center; /* Centraliza o texto dentro do botão */
+    border-radius: 30px; /* Mantém as bordas arredondadas */
+    background-color: #c73f6d; /* Cor do botão */
+    color: white; /* Cor do texto */
+    overflow: hidden; /* Garante que não haja overflow */
+    transition: background-color 0.3s;
+    text-decoration:none;
+}
+
+.botao-whatsapp-1:hover {
+    background-color: #a32f55;
+    
+}
+
 

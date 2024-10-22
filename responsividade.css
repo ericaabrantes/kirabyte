@@ -12,6 +12,7 @@
 @media (max-width: 768px) {
     .conteudo-servicos {
         flex-direction: column;
+        gap:0;
     }
 
     .servicos h2 {
@@ -123,11 +124,16 @@
 
     .sobre__cta {
         margin-top: 30px;
+        text-align: center;
 
     }
-
-    .botao-whatsapp{
+    .botao-whatsapp {
         font-size: 1rem;
+        word-wrap: break-word; /* Permite a quebra do texto dentro do botão */
+        white-space: normal; /* Garante que o texto dentro do botão possa quebrar linhas */
+        width: 100%; /* Faz o botão ocupar toda a largura disponível */
+        padding: 15px; /* Adiciona um bom espaçamento */
+        text-align: center; /* Centraliza o texto */
     }
     .sobre img{
         width: 70%;;
@@ -173,5 +179,19 @@
         width: 80%; /* Botão ocupa toda a largura */
         padding: 1rem; /* Reduz o padding para melhor ajuste em telas pequenas */
         margin-top: 20px;
+    }
+}
+
+@media (max-width: 517px) {
+    .botao-whatsapp-1 {
+        font-size: 0.9rem; /* Reduz o tamanho da fonte para caber melhor em telas pequenas */
+        padding: 10px; /* Diminui o padding para evitar quebra em telas menores */
+        width: 90%; /* Dá um pouco de respiro nas laterais */
+        margin: 0 auto; /* Centraliza o botão horizontalmente */
+        display: inline-block;
+    }
+
+    .borboleta-bottom{
+        display: none;
     }
 }
